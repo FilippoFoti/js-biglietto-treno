@@ -3,7 +3,6 @@ alert('ATTENZIONE! \nQuesto è il sito ufficiale di Travel Whit Boolean. Qui pot
 
 // Chiedere al cliente quanti chilometri vuole percorrere trasformando la risposta in un numero.
 const kilometres = parseInt (prompt ("Benvenuto in Travel With Boolean, quanti chilometri vuoi percorrere?"));
-const kilometresDecimal= kilometres.toFixed(2)
 
 // Chiedere al cliente quanti anni ha trasformando la risposta in un numero
 const clientAge = parseInt (prompt ("In base alla tua età potrai avere uno sconto sul prezzo del biglietto. Quanti anni hai?"));
@@ -13,3 +12,9 @@ console.log(kilometres, clientAge);
 const price = kilometres * 0.21;
 console.log(price);
 
+// Applichiamo un primo controllo
+ if (isNaN(kilometres)) {
+    document.getElementById("text").innerHTML = "Si prega di utilizzare solo numeri";
+} else if (isNaN(clientAge)) {
+    document.getElementById("text").innerHTML = "Si prega di utilizzare solo numeri";
+}
