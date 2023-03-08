@@ -1,10 +1,53 @@
-#text {
-    color: black;
-} 
 /* HEADER */
 
 header {
     height: 50px;
     width: 100%;
-    background-color: white;
+    background-color: #e6e6e6;
+}
+
+/* MAIN */
+
+section {
+    background-color: #e6e6e6;
+}
+
+section h1 {
+    height: 150px;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 4rem;
+    font-weight: bold;
+    background-image: url(../img/pexels-pixabay-512890.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.col {
+    background-image: url(../img/pexels-anna-shvets-3962213.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+}
+
+#text {
+    height: 120px;
+    background-color: rgba(230, 230, 230, 0.6);
+    border: 1px solid rgba(230, 230, 230, 1);
+    border-radius: 10px;
+    color: black;
+    font-size: 2.5rem;
+}
+
+/* FOOTER */
+
+footer {
+    height: 100px;
+    background-color: rgba(200, 200, 200, 1);
+}
+
+footer h3 {
+    color: black;
+    font-size: 1rem;
 }
