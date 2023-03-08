@@ -12,9 +12,26 @@ console.log(kilometres, clientAge);
 const price = kilometres * 0.21;
 console.log(price);
 
-// Applichiamo un primo controllo
+// Applichiamo un controllo
  if (isNaN(kilometres)) {
     document.getElementById("text").innerHTML = "Si prega di utilizzare solo numeri";
 } else if (isNaN(clientAge)) {
     document.getElementById("text").innerHTML = "Si prega di utilizzare solo numeri";
 }
+
+// Calcoliamo lo sconto del biglietto
+const priceUnder = (0.8);
+const priceOver = (0.6);
+
+let finalPrice = '';
+
+if (clientAge <= 18) {
+    finalPrice = (price * priceUnder).toFixed(2);
+    console.log(finalPrice);
+} else if (clientAge >= 65) {
+    finalPrice = (price * priceOver).toFixed(2);
+    console.log(finalPrice);
+}
+
+// Stampiamo il prezzo scontato
+document.getElementById("text").innerHTML = `Il prezzo del tuo biglietto è: € ${finalPrice}`;
